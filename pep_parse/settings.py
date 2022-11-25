@@ -6,12 +6,12 @@ NEWSPIDER_MODULE = 'pep_parse.spiders'
 ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {
-   'pep_parse.pipelines.PepParsePipeline': 300,
+    'pep_parse.pipelines.PepParsePipeline': 300,
 }
 
 FEED_EXPORTERS = {
-        'csv': 'pep_parse.exporters.CustomCsvItemExporter',
-    }
+    'csv': 'pep_parse.exporters.CustomCsvItemExporter',
+}
 PEP_FILENAME = ('results/pep_%(time)s.csv')
 
 FEEDS = {
